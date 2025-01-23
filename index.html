@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beats and Plugins Popup</title>
+    <link rel="stylesheet" href="assets/css/index-style.css">
+</head>
+<body>
+    <video class="video-background" autoplay loop muted>
+        <source src="assets/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <!-- Button with icon for Beats -->
+        <button id="beatsBtn" onclick="toggleBeatsForm()">
+            <img src="assets/icons/song.png" alt="Beats Icon" class="button-icon">
+        </button>
+
+        <!-- Button with icon for Plugins -->
+        <button id="pluginsBtn" onclick="togglePluginsForm()">
+            <img src="assets/icons/plugin.png" alt="Plugins Icon" class="button-icon">
+        </button>
+    </div>
+
+    <div id="beatsModal" class="modal">
+        <!-- Content for the Beats modal -->
+    </div>
+
+    <div id="pluginsModal" class="modal">
+        <!-- Content for the Plugins modal -->
+    </div>
+    <script src="assets/js/index-ux.js"></script>
+</body>
+</html>
